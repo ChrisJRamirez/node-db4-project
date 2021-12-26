@@ -1,8 +1,11 @@
 
 exports.seed = function(knex, Promise) {
-  return knex('recipes').insert([   
-    { recipe_name: 'Toast',recipe_instructions_id:1,rBook_id:2},
-    { recipe_name: 'Macaroni',recipe_instructions_id:2,rBook_id:1},
-    { recipe_name: 'Bread',recipe_instructions_id:3,rBook_id:3}
+  return knex('ingredients').insert([   
+    { ingredient_name: 'Broccoli',ingredient_units:"lbs"},
+    { ingredient_name: 'Pesto',ingredient_units:"lbs"},
+    { ingredient_name: 'Pasta',ingredient_units:"lbs"},
+    { ingredient_name: 'Lemon',ingredient_units:"slices"},
+    { ingredient_name: 'Chicken',ingredient_units:"kilos"},
+    { ingredient_name: 'Salmon',ingredient_units:"grams"}
   ]);
 };
